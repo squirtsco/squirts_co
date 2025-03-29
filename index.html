@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Squirt's Lawn Care</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<section class="header">
+   <nav>
+      <a href="index.html"><img src="images/squirtslogo.png "></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT US</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+          <li><a href="quote.html">QUOTE</a></li>
+    
+
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+<div class="text-box">
+  <h1>Let us do the dirty work.</h1>
+  <p>We bring more than just peace of mind for a perfect yard. Your pup’s business is <br> our business—reliably cleaned on your schedule.
+  </p>
+  <a href="quote.html" class="hero-btn">Get A Quote</a>
+</div>
+
+</section>
+
+
+<!-- about me section -->
+<section class="about-me">
+  <h1>Meet The Founders</h1>
+
+  <div class="row">
+    <div class="about-me-left">
+      <img src="images/brettandegan.JPG" alt="">
+    </div>
+
+    <div class="about-me-right">
+      <p style="margin-top: 30px;">As two business students at the University of Illinois Urbana-Champaign with a
+        passion for animals, we seek out every oppourtunity possible to connect with
+        the local community and our furry friends! That’s why we started Squirts—a subscription-based 
+        poop pickup service designed to make pet ownership easier, cleaner, and more enjoyable for everyone. 
+        Whether you're a busy student, a working professional, or a family with a full plate, 
+        we're here to help you keep your yard spotless and stress-free.</p>
+      <a href="about.html" class="hero-btn red-btn">Learn More</a>
+    </div>
+    
+</div>
+</section>
+
+<!-- footer -->
+<section class="footer">
+  <h4>Follow Us</h4>
+  <div class="icons">
+    <a href="https://www.linkedin.com/company/squirtscompany" class="fa fa-linkedin"></a>
+    <a href="https://www.instagram.com/squirts.company/" class="fa fa-instagram"></a>
+  </div>
+  <p>Made by Squirts LLC <i class="fa fa-copyright"></i> March 2025</p>
+</section>
+
+
+<!-- JavaScript for toggle menu -->
+<script>
+var navLinks = document.getElementById("navLinks");
+
+function showMenu(){
+  navLinks.style.right = "0";
+}
+function hideMenu(){
+  navLinks.style.right = "-200px";
+}
+
+</script>
+
+
+
+</body>
+</html>

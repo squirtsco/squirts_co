@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Squirt's Lawn Care</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<!-- Sub-header with quote-specific background image -->
+<section class="sub-header" style="background-image: linear-gradient(rgba(4,9,30,0.6), rgba(4,9,30,0.6)), url('images/dog running in field3.png');">
+  <nav>
+    <a href="index.html"><img src="images/squirtslogo.png"></a>
+    <div class="nav-links" id="navLinks">
+      <i class="fa fa-times" onclick="hideMenu()"></i>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="quote.html">QUOTE</a></li>
+      </ul>
+    </div>
+    <i class="fa fa-bars" onclick="showMenu()"></i>
+  </nav>
+  <h1 style="font-size: 64px;">Get A Quote</h1>
+</section>
+
+<!-- Embedded Google Form -->
+<section style="display: flex; justify-content: center; padding: 30px;">
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdTw5eVqY7YzRUpXK2ekUYQkL4XZeK7MoywsWXkLBrUZzgbJw/viewform?embedded=true" width="640" height="1582" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+</section>
+
+<!-- footer -->
+<section class="footer">
+  <h4>Follow Us</h4>
+  <div class="icons">
+    <a href="https://www.linkedin.com/company/squirtscompany" class="fa fa-linkedin"></a>
+    <a href="https://www.instagram.com/squirts.company/" class="fa fa-instagram"></a>
+  </div>
+  <p>Made by Squirts LLC <i class="fa fa-copyright"></i> March 2025</p>
+</section>
+
+<!-- JavaScript for toggle menu -->
+<script>
+  var navLinks = document.getElementById("navLinks");
+
+  function showMenu() {
+    navLinks.style.right = "0";
+  }
+
+  function hideMenu() {
+    navLinks.style.right = "-200px";
+  }
+</script>
+
+</body>
+</html>

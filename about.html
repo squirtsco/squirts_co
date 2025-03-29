@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Squirt's Lawn Care</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<section class="sub-header">
+   <nav>
+      <a href="index.html"><img src="images/squirtslogo.png "></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT US</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+          <li><a href="quote.html">QUOTE</a></li>
+
+    
+
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1 style="font-size: 64px;">About Us</h1>
+</section>
+
+<!-- About us content -->
+<section class="about-us" style="padding-bottom: 20px;">
+  <div class="row" style="display: flex; align-items: center; gap: 20px;">
+    <div class="about-col" style="flex: 1; margin-bottom: 0;">
+      <div style="display: flex; flex-direction: column; justify-content: center; gap: 10px;">
+        <h1 style="font-size: 42px;">Our Mission</h1>
+        <p style="font-size: 18px; line-height: 1.5;">
+          Based in the Naperville area, we understand the joys—and challenges—of being a dog owner. As lifelong dog lovers, we know firsthand how easy it is to forget about cleanup until it becomes a 
+          problem—whether that’s a ruined lawnmower, dirty patio furniture, or a surprise step from a neighbor’s kid. We believe picking up after your dog shouldn’t be a stressful chore or a 
+          barrier for those with limited mobility. That’s why we’re committed to making cleanup simple, convenient, and worry-free for every pet owner.
+          We also give back—10% of our proceeds go to local animal shelters, and we proudly partner with campus clubs to support pet adoption and raise awareness for animal welfare organizations.
+        </p>
+
+        <hr style="border: none; height: 1px; background-color: black; margin: 0 0 30px 0;">
+
+        <h1 style="font-size: 42px;">Our Service</h1>
+        <p style="font-size: 18px; line-height: 1.5;">
+          Just tell us how many dogs you have, your address, and how often you'd like your lawn cleaned—we'll handle the rest! It's simple, reliable, and hassle-free care designed to keep your yard clean and your mind at ease.
+        </p>
+      </div>
+    </div>
+    <div class="about-col" style="flex: 1; display: flex; justify-content: center; margin-bottom: 0;">
+      <img src="images/rome2.jpg" style="width: 75%; height: auto; margin-bottom: 0;">
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<!-- footer -->
+<section class="footer">
+  <h4>Follow Us</h4>
+  <div class="icons">
+    <a href="https://www.linkedin.com/company/squirtscompany" class="fa fa-linkedin"></a>
+    <a href="https://www.instagram.com/squirts.company/" class="fa fa-instagram"></a>
+  </div>
+  <p>Made by Squirts LLC <i class="fa fa-copyright"></i> March 2025</p>
+</section>
+
+
+<!-- JavaScript for toggle menu -->
+<script>
+var navLinks = document.getElementById("navLinks");
+
+function showMenu(){
+  navLinks.style.right = "0";
+}
+function hideMenu(){
+  navLinks.style.right = "-200px";
+}
+
+</script>
+
+
+
+</body>
+</html>
